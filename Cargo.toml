@@ -1,0 +1,22 @@
+[package]
+name = "myfriendrust"
+version = "0.1.0"
+authors = ["Kushal Das <mail@kushaldas.in>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "myfriendrust"
+crate-type = ["cdylib"]
+
+
+[dependencies.pyo3]
+version = "0.9.2"
+features = ["extension-module"]
+
+
+[package.metadata.maturin]
+classifier = ["Programming Language :: Python"]
+requires-python = "3.7"
+project-url = ["https://kushaldas.in"]
